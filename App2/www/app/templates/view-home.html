@@ -1,0 +1,28 @@
+﻿<ion-view view-title="Home">
+    <ion-content class="padding">
+        <ion-refresher on-refresh="refresh(true)" spinner="android"></ion-refresher>
+        <ion-list>
+            <ion-item item="item">
+                    <div>
+                        <form>
+                            <span>Name:</span>
+                            <input type="text" ng-model="names" />
+                            <br />
+                            <span>Number:</span>
+                            <input type="text" ng-model="number" />
+                            <br />
+                            <input type="button" value="submit" ng-click="add()" />
+                        </form>
+                    </div>
+
+                    <div>
+                        <div ng-repeat="are in arrays">
+                            <p>{{are.nam}}</p>
+                            <p>{{are.num}}</p>
+                        </div>
+                        <p>Hello navaneeth . {{20+5}}</p>
+                    </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
